@@ -1,0 +1,195 @@
+/* entire website rules */
+body {
+  font-family: "Laguna Vintage Condensed Semi Bold";
+  background-color: black;
+}
+
+/* change color of hyperlinked text (<a> tag) */
+a {
+  text-decoration: none;
+}
+
+/* small circle image */
+.smallC {
+  height:150px;
+  border-radius: 50%;
+  border: 10px solid #6a00fe;
+}
+
+ /* large square image */
+.largeS {
+  background: url('./images/profile_backgroundless.png');
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+ /* title/hello world */
+.header {
+  background: #1c002d;
+  padding: 230px;
+  text-align: left;
+  margin:20px;
+  font-size:20px;
+  color: #D0DAEE;
+  border-radius: 40px;
+  margin-top:35px;
+}
+
+strong {
+  color:#6a00fe;
+  font-weight: bold;
+}
+
+.fade {
+  color:dimgrey
+}
+
+/* padding and border in box size*/
+* {
+  box-sizing: border-box;
+}
+  
+
+/* Flexbox container for two columns */
+.columns2-container {
+  display: flex;
+  justify-content: space-between; /* Ensure space between the columns */
+  align-items: stretch; /* Make sure both columns are of equal height */
+  gap: 20px; /* Add some space between columns */
+}
+
+/* Two columns */
+.columns2 {
+  flex: 1; /* Ensure both columns take equal width */
+  padding: 40px;
+  margin: 30px;
+  color: #D0DAEE;
+  line-height: 6;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center;
+  box-sizing: border-box;
+  line-height: 2;
+}
+
+.columnBackground {
+  background-color: #6a00fe;
+}
+
+.resume-link {
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #4e00c4;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.resume-link:hover {
+  background-color: #2d006b;
+  color: #D0DAEE;
+  transform: scale(1.05);
+}
+
+/* Scroll button */
+.button-container {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Anchor for bottom scroll */
+#bottom {
+  position: relative;
+  bottom: 0;
+}
+
+/* header for subsections */
+.subHeader {
+  text-align:center;
+  color: #D0DAEE;
+  margin-top: 100px;
+  margin-bottom:70px;
+  font-size: 35px;
+}
+
+.bento-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* bento boxes */
+.columns4 {
+  float: left;
+  width: 21%;
+  padding: 10px;
+  margin:20px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.bentoPlaceholder {
+  background-color: black;
+  background-size: cover;
+  }
+  
+.bento {
+  background-color: #6a00fe;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.bento:hover {
+  background-color: #4e00c4;
+  transform: scale(1.05);
+}
+
+.bentoText {
+  text-align:center;
+  font-size:50px;
+  color: #D0DAEE;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #1c002d;
+  color: #D0DAEE;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footerL {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-link {
+  color: #D0DAEE;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-link:hover {
+  background-color: #6a00fe;
+  color: #fff;
+  transform: scale(1.05);
+}
